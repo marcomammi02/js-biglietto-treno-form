@@ -19,29 +19,45 @@
     <script src="script.js" defer></script>
 
 
+    <!-- main style -->
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
-    <div class="box_form">
-        <form action="">
-            <label for="name">Come ti chiami?</label>
-            <input class="name" type="text" name="name" placeholder="Nome e Cognome...">
-
-            <label for="km">Quanti km farai?</label>
-            <input class="km" type="number" name="km" placeholder="Inserisci km...">
-
-            <label for="age">La tua fascia di età?</label>
-            <select class="age" name="age">
-                <option value="none">---</option>
-                <option value="under">Minorenne</option>
-                <option value="adult">Maggiorenne</option>
-                <option value="over">Over 65</option>
-            </select>
-        </form>
-        <div class="btn_generate btn">Genera</div>
-        <div class="btn_delete btn">Annulla</div>
+    <div class="s_container_form">
+        <div class="box_form text-white py-4 px-2">
+            <h3 class="text-center text-uppercase mb-4">Calcoliamo il prezzo del tuo biglietto...</h3>
+            <form class="row row-cols-3">
+                <div class="col">
+                    <label for="name">Come ti chiami?</label>
+                    <input class="name d-block" type="text" name="name" placeholder="Nome e Cognome...">
+                </div>
+                <div class="col">
+                    <label for="km">Quanti km farai?</label>
+                    <input class="km d-block" type="number" name="km" placeholder="Inserisci km...">
+                </div>
+                <div class="col">
+                    <label for="age">Fascia d'Età?</label>
+                    <select class="age d-block text-center" name="age">
+                        <option value="none">---</option>
+                        <option value="under">Minorenne</option>
+                        <option value="adult">Maggiorenne</option>
+                        <option value="over">Over 65</option>
+                    </select>
+                </div>
+            </form>
+            <div class="btn_box text-center">
+                <div class="btn_generate btn btn-light mt-4 me-5">Genera</div>
+                <div class="btn_delete btn btn-light mt-4 ms-5">Annulla</div>
+            </div>
+        </div>
     </div>
-
-    <div class="box_ticket"></div>
+    
+    
+    <div class="box_ticket text-white text-center my-5 p-4"></div>
+    
+    
 
 </body>
 </html>

@@ -1,0 +1,25 @@
+body{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+}
+
+
+/* form section */
+.s_container_form{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.box_form{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+}
+
+
+/* ticket */
+.box_ticket{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    width: fit-content;
+}
